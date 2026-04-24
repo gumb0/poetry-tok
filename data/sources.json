@@ -38,5 +38,15 @@
     "landingUrl": "https://www.gutenberg.org/ebooks/12241",
     "copyrightStatus": "Public domain in the USA",
     "importStatus": "imported"
+  },
+  {
+    "id": "gutenberg-19188",
+    "title": "Poems",
+    "author": "Christina Rossetti",
+    "gutenbergId": 19188,
+    "textUrl": "https://www.gutenberg.org/ebooks/19188.txt.utf-8",
+    "landingUrl": "https://www.gutenberg.org/ebooks/19188",
+    "copyrightStatus": "Public domain in the USA",
+    "importStatus": "imported"
   }
 ]

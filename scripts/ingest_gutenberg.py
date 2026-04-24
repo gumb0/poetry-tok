@@ -65,12 +65,18 @@ def main() -> int:
         default=[],
         help="Title to exclude from generated output. Can be passed more than once.",
     )
+    parser.add_argument(
+        "--stop-before",
+        action="append",
+        default=[],
+        help="Stop parsing before this text marker. Can be passed more than once.",
+    )
     parser.add_argument("--min-lines", type=int, default=4)
     parser.add_argument("--max-lines", type=int, default=80)
     parser.add_argument("--out", default="data/poems.generated.json")
     parser.add_argument(
         "--split-mode",
-        choices=("auto", "title", "numbered"),
+        choices=("auto", "title", "numbered", "heading"),
         default="auto",
         help="How to split poems. 'auto' falls back to numbered parsing when title parsing finds little.",
     )
@@ -78,6 +84,7 @@ def main() -> int:
 
     raw_text = read_input(args.input)
     body = strip_gutenberg_boilerplate(raw_text)
+    body = truncate_before_markers(body, args.stop_before)
     poems = split_poems(body, args.author, args.source, args)
 
     output_path = Path(args.out)
@@ -121,10 +128,21 @@ def strip_gutenberg_boilerplate(text: str) -> str:
     return "\n".join(lines[start_index:end_index]).strip()
 
 
+def truncate_before_markers(text: str, markers: list[str]) -> str:
+    end_index = len(text)
+    for marker in markers:
+        marker_index = text.find(marker)
+        if marker_index >= 0:
+            end_index = min(end_index, marker_index)
+    return text[:end_index].strip()
+
+
 def split_poems(text: str, author: str, source: str, args: argparse.Namespace) -> list[Poem]:
     excluded_titles = set(normalize_title(title) for title in args.exclude_title)
     if args.split_mode == "numbered":
         return split_numbered_poems(text, author, source, args.min_lines, args.max_lines, excluded_titles)
+    if args.split_mode == "heading":
+        return split_heading_poems(text, author, source, args.min_lines, args.max_lines, excluded_titles)
     poems = split_title_poems(text, author, source, args.min_lines, args.max_lines, excluded_titles)
     if args.split_mode == "auto" and len(poems) < 5:
         numbered_poems = split_numbered_poems(text, author, source, args.min_lines, args.max_lines, excluded_titles)
@@ -162,7 +180,7 @@ def split_title_poems(
 
     poems: list[Poem] = []
     for title, lines in chunks:
-        poem_text = trim_blank_edges("\n".join(lines))
+        poem_text = clean_poem_text("\n".join(lines))
         poem_lines = [line for line in poem_text.splitlines() if line.strip()]
         if normalize_title(title) in excluded_titles:
             continue
@@ -171,6 +189,46 @@ def split_title_poems(
         if min_lines <= len(poem_lines) <= max_lines:
             poems.append(Poem(title=title, author=author, text=poem_text, source=source))
 
+    return poems
+
+
+def split_heading_poems(
+    text: str,
+    author: str,
+    source: str,
+    min_lines: int,
+    max_lines: int,
+    excluded_titles: set[str],
+) -> list[Poem]:
+    chunks: list[tuple[str, list[str]]] = []
+    current_title: str | None = None
+    current_lines: list[str] = []
+
+    for raw_line in text.splitlines():
+        line = raw_line.rstrip()
+        if is_probable_heading_title(line):
+            if current_title and current_lines:
+                chunks.append((current_title, current_lines))
+            current_title = clean_title(line)
+            current_lines = []
+            continue
+
+        if current_title:
+            current_lines.append(line)
+
+    if current_title and current_lines:
+        chunks.append((current_title, current_lines))
+
+    poems: list[Poem] = []
+    for title, lines in chunks:
+        poem_text = clean_poem_text("\n".join(lines))
+        poem_lines = [line for line in poem_text.splitlines() if line.strip()]
+        if normalize_title(title) in excluded_titles:
+            continue
+        if is_front_matter(title, poem_text):
+            continue
+        if min_lines <= len(poem_lines) <= max_lines:
+            poems.append(Poem(title=title, author=author, text=poem_text, source=source))
     return poems
 
 
@@ -212,7 +270,7 @@ def split_numbered_poems(
 
     poems: list[Poem] = []
     for title, lines in chunks:
-        poem_text = trim_blank_edges("\n".join(lines))
+        poem_text = clean_poem_text("\n".join(lines))
         poem_lines = [line for line in poem_text.splitlines() if line.strip()]
         if normalize_title(title) in excluded_titles:
             continue
@@ -283,6 +341,23 @@ def is_probable_title(line: str) -> bool:
     return upperish and not roman and not numbered
 
 
+def is_probable_heading_title(line: str) -> bool:
+    stripped = line.strip()
+    if not stripped or len(stripped) > 86:
+        return False
+    if not line.startswith("    "):
+        return False
+    if stripped.startswith(("[", "*")):
+        return False
+    if not re.search(r"[A-Za-z]", stripped):
+        return False
+    normalized = normalize_title(stripped.rstrip("."))
+    if normalized in SECTION_TITLES or normalized in {"contents", "by"}:
+        return False
+    letters = re.sub(r"[^A-Za-z]", "", stripped)
+    return bool(letters) and letters.upper() == letters
+
+
 def clean_title(line: str) -> str:
     return capwords(re.sub(r"\s+", " ", line.strip().rstrip(".")))
 
@@ -307,6 +382,18 @@ def trim_blank_edges(text: str) -> str:
     while lines and not lines[-1].strip():
         lines.pop()
     return "\n".join(lines)
+
+
+def clean_poem_text(text: str) -> str:
+    lines = []
+    for line in text.splitlines():
+        stripped = line.strip()
+        if re.fullmatch(r"\*+(?:\s+\*)+", stripped):
+            continue
+        if stripped.startswith("[Illustration"):
+            continue
+        lines.append(line)
+    return trim_blank_edges("\n".join(lines))
 
 
 def normalize_newlines(text: str) -> str:

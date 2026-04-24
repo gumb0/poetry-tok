@@ -65,7 +65,22 @@ python3 scripts/build_corpus.py \
   data/dickinson-series-one.generated.json \
   data/dickinson-series-two.generated.json \
   data/dickinson-series-three.generated.json \
+  data/rossetti-poems.generated.json \
   --out data/poems.json
+```
+
+Rossetti's `Poems` uses indented heading markers. Import short/medium candidates with:
+
+```bash
+python3 scripts/ingest_gutenberg.py "https://www.gutenberg.org/ebooks/19188.txt.utf-8" \
+  --author "Christina Rossetti" \
+  --source "Project Gutenberg ebook 19188" \
+  --split-mode heading \
+  --max-lines 60 \
+  --stop-before "Transcriber's Note:" \
+  --exclude-title "Bride" \
+  --exclude-title "Ghost" \
+  --out data/rossetti-poems.generated.json
 ```
 
 ## Recommendation Roadmap
