@@ -1,4 +1,4 @@
-const poems = [
+const fallbackPoems = [
   {
     id: "dickinson-hope",
     title: "Hope is the thing with feathers",
@@ -59,7 +59,8 @@ const poems = [
 
 const stateKey = "poetry-tok-state-v1";
 const state = loadState();
-let currentPoem = chooseNextPoem();
+let poems = fallbackPoems;
+let currentPoem = null;
 
 const titleEl = document.querySelector("#poem-title");
 const authorEl = document.querySelector("#poem-author");
@@ -73,7 +74,7 @@ const dislikedCountEl = document.querySelector("#disliked-count");
 const seenCountEl = document.querySelector("#seen-count");
 const tagCloudEl = document.querySelector("#tag-cloud");
 
-render();
+init();
 
 likeButton.addEventListener("click", () => rateCurrentPoem("liked"));
 dislikeButton.addEventListener("click", () => rateCurrentPoem("disliked"));
@@ -102,6 +103,24 @@ function loadState() {
     return { ...fallback, ...JSON.parse(localStorage.getItem(stateKey)) };
   } catch {
     return fallback;
+  }
+}
+
+async function init() {
+  poems = await loadPoems();
+  currentPoem = chooseNextPoem();
+  render();
+}
+
+async function loadPoems() {
+  try {
+    const response = await fetch("./data/poems.json");
+    if (!response.ok) throw new Error(`Poem data returned ${response.status}`);
+    const importedPoems = await response.json();
+    return importedPoems.length ? importedPoems : fallbackPoems;
+  } catch (error) {
+    console.warn("Using fallback poems:", error);
+    return fallbackPoems;
   }
 }
 

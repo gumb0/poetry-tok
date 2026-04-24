@@ -5,6 +5,7 @@ A first-pass prototype for a TikTok-style poem reader and recommender.
 The current version is intentionally dependency-light:
 
 - `index.html`, `styles.css`, and `app.js` run directly in a browser.
+- `data/poems.json` contains the current app corpus.
 - Likes/dislikes are stored in `localStorage`.
 - Recommendations are based on poem tags and author preference for now.
 - `scripts/ingest_gutenberg.py` creates reviewable poem JSON from Gutenberg-style text files.
@@ -31,7 +32,20 @@ python3 scripts/ingest_gutenberg.py ./raw/dickinson.txt \
   --out data/dickinson.generated.json
 ```
 
+For the first real corpus candidate, use William Blake's Project Gutenberg ebook `1934`:
+
+```bash
+python3 scripts/ingest_gutenberg.py "https://www.gutenberg.org/ebooks/1934.txt.utf-8" \
+  --author "William Blake" \
+  --source "Project Gutenberg ebook 1934" \
+  --exclude-title "Songs Of Innocence" \
+  --exclude-title "Songs Of Experience" \
+  --out data/blake-songs.generated.json
+```
+
 The generated JSON should be manually reviewed before being added to the app corpus.
+
+For a reviewed corpus file, write to `data/poems.json`. Generated scratch files matching `data/*.generated.json` are ignored by git.
 
 ## Recommendation Roadmap
 

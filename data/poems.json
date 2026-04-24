@@ -1,0 +1,686 @@
+[
+  {
+    "id": "william-blake-introduction",
+    "title": "Introduction",
+    "author": "William Blake",
+    "text": "Piping down the valleys wild,\n    Piping songs of pleasant glee,\nOn a cloud I saw a child,\n    And he laughing said to me:\n\n‘Pipe a song about a Lamb!’\n    So I piped with merry cheer.\n‘Piper, pipe that song again.’\n    So I piped: he wept to hear.\n\n‘Drop thy pipe, thy happy pipe;\n    Sing thy songs of happy cheer!’\nSo I sung the same again,\n    While he wept with joy to hear.\n\n‘Piper, sit thee down and write\n    In a book, that all may read.’\nSo he vanished from my sight;\n    And I plucked a hollow reed,\n\nAnd I made a rural pen,\n    And I stained the water clear,\nAnd I wrote my happy songs\n    Every child may joy to hear.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 20,
+    "tags": [
+      "nature",
+      "childhood",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-shepherd",
+    "title": "The Shepherd",
+    "author": "William Blake",
+    "text": "How sweet is the shepherd’s sweet lot!\nFrom the morn to the evening he strays;\nHe shall follow his sheep all the day,\nAnd his tongue shall be fillèd with praise.\n\nFor he hears the lambs’ innocent call,\nAnd he hears the ewes’ tender reply;\nHe is watchful while they are in peace,\nFor they know when their shepherd is nigh.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "nature",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-the-echoing-green",
+    "title": "The Echoing Green",
+    "author": "William Blake",
+    "text": "The sun does arise,\nAnd make happy the skies;\nThe merry bells ring\nTo welcome the Spring;\nThe skylark and thrush,\nThe birds of the bush,\nSing louder around\nTo the bells’ cheerful sound;\nWhile our sports shall be seen\nOn the echoing green.\n\nOld John, with white hair,\nDoes laugh away care,\nSitting under the oak,\nAmong the old folk.\nThey laugh at our play,\nAnd soon they all say,\n‘Such, such were the joys\nWhen we all—girls and boys—\nIn our youth-time were seen\nOn the echoing green.’\n\nTill the little ones, weary,\nNo more can be merry:\nThe sun does descend,\nAnd our sports have an end.\nRound the laps of their mothers\nMany sisters and brothers,\nLike birds in their nest,\nAre ready for rest,\nAnd sport no more seen\nOn the darkening green.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 30,
+    "tags": [
+      "nature",
+      "childhood",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-lamb",
+    "title": "The Lamb",
+    "author": "William Blake",
+    "text": "Little lamb, who made thee?\nDoes thou know who made thee,\nGave thee life, and bid thee feed\nBy the stream and o’er the mead;\nGave thee clothing of delight,\nSoftest clothing, woolly, bright;\nGave thee such a tender voice,\nMaking all the vales rejoice?\n    Little lamb, who made thee?\n    Does thou know who made thee?\n\nLittle lamb, I’ll tell thee;\nLittle lamb, I’ll tell thee:\nHe is callèd by thy name,\nFor He calls Himself a Lamb.\nHe is meek, and He is mild,\nHe became a little child.\nI a child, and thou a lamb,\nWe are callèd by His name.\n    Little lamb, God bless thee!\n    Little lamb, God bless thee!",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 20,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-little-black-boy",
+    "title": "The Little Black Boy",
+    "author": "William Blake",
+    "text": "My mother bore me in the southern wild,\n    And I am black, but O my soul is white!\nWhite as an angel is the English child,\n    But I am black, as if bereaved of light.\n\nMy mother taught me underneath a tree,\n    And, sitting down before the heat of day,\nShe took me on her lap and kissèd me,\n    And, pointing to the East, began to say:\n\n‘Look on the rising sun: there God does live,\n    And gives His light, and gives His heat away,\nAnd flowers and trees and beasts and men receive\n    Comfort in morning, joy in the noonday.\n\n‘And we are put on earth a little space,\n    That we may learn to bear the beams of love;\nAnd these black bodies and this sunburnt face\n    Are but a cloud, and like a shady grove.\n\n‘For, when our souls have learned the heat to bear,\n    The cloud will vanish, we shall hear His voice,\nSaying, “Come out from the grove, my love and care,\n    And round my golden tent like lambs rejoice.”’\n\nThus did my mother say, and kissed me,\n    And thus I say to little English boy.\nWhen I from black, and he from white cloud free,\n    And round the tent of God like lambs we joy,\n\nI’ll shade him from the heat till he can bear\n    To lean in joy upon our Father’s knee;\nAnd then I’ll stand and stroke his silver hair,\n    And be like him, and he will then love me.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 28,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "love",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-blossom",
+    "title": "The Blossom",
+    "author": "William Blake",
+    "text": "Merry, merry sparrow!\nUnder leaves so green\n    A happy blossom\nSees you, swift as arrow,\nSeek your cradle narrow,\n    Near my bosom.\n\nPretty, pretty robin!\nUnder leaves so green\n    A happy blossom\nHears you sobbing, sobbing,\nPretty, pretty robin,\n    Near my bosom.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 12,
+    "tags": [
+      "nature",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-the-chimney-sweeper",
+    "title": "The Chimney-sweeper",
+    "author": "William Blake",
+    "text": "When my mother died I was very young,\nAnd my father sold me while yet my tongue\nCould scarcely cry ‘Weep! weep! weep! weep!’\nSo your chimneys I sweep, and in soot I sleep.\n\nThere’s little Tom Dacre, who cried when his head,\nThat curled like a lamb’s back, was shaved; so I said,\n‘Hush, Tom! never mind it, for, when your head’s bare,\nYou know that the soot cannot spoil your white hair.’\n\nAnd so he was quiet, and that very night,\nAs Tom was a-sleeping, he had such a sight!—\nThat thousands of sweepers, Dick, Joe, Ned, and Jack,\nWere all of them locked up in coffins of black.\n\nAnd by came an angel, who had a bright key,\nAnd he opened the coffins, and set them all free;\nThen down a green plain, leaping, laughing, they run\nAnd wash in a river, and shine in the sun.\n\nThen naked and white, all their bags left behind,\nThey rise upon clouds, and sport in the wind:\nAnd the angel told Tom, if he’d be a good boy,\nHe’d have God for his father, and never want joy.\n\nAnd so Tom awoke, and we rose in the dark,\nAnd got with our bags and our brushes to work.\nThough the morning was cold, Tom was happy and warm:\nSo, if all do their duty, they need not fear harm.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 24,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "grief",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-little-boy-lost",
+    "title": "The Little Boy Lost",
+    "author": "William Blake",
+    "text": "‘Father, father, where are you going?\n    O do not walk so fast!\nSpeak, father, speak to your little boy,\n    Or else I shall be lost.’\n\nThe night was dark, no father was there,\n    The child was wet with dew;\nThe mire was deep, and the child did weep,\n    And away the vapour flew.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "childhood",
+      "grief",
+      "dream",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-the-little-boy-found",
+    "title": "The Little Boy Found",
+    "author": "William Blake",
+    "text": "The little boy lost in the lonely fen,\n    Led by the wandering light,\nBegan to cry, but God, ever nigh,\n    Appeared like his father, in white.\n\nHe kissed the child, and by the hand led,\n    And to his mother brought,\nWho in sorrow pale, through the lonely dale,\n    Her little boy weeping sought.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "childhood",
+      "spiritual",
+      "grief",
+      "love",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-laughing-song",
+    "title": "Laughing Song",
+    "author": "William Blake",
+    "text": "When the green woods laugh with the voice of joy,\nAnd the dimpling stream runs laughing by;\nWhen the air does laugh with our merry wit,\nAnd the green hill laughs with the noise of it;\n\nWhen the meadows laugh with lively green,\nAnd the grasshopper laughs in the merry scene;\nWhen Mary and Susan and Emily\nWith their sweet round mouths sing ‘Ha ha he!’\n\nWhen the painted birds laugh in the shade,\nWhere our table with cherries and nuts is spread:\nCome live, and be merry, and join with me,\nTo sing the sweet chorus of ‘Ha ha he!’",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 12,
+    "tags": [
+      "nature",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-a-cradle-song",
+    "title": "A Cradle Song",
+    "author": "William Blake",
+    "text": "Sweet dreams, form a shade\nO’er my lovely infant’s head!\nSweet dreams of pleasant streams\nBy happy, silent, moony beams!\n\nSweet Sleep, with soft down\nWeave thy brows an infant crown!\nSweet Sleep, angel mild,\nHover o’er my happy child!\n\nSweet smiles, in the night\nHover over my delight!\nSweet smiles, mother’s smiles,\nAll the livelong night beguiles.\n\nSweet moans, dovelike sighs,\nChase not slumber from thy eyes!\nSweet moans, sweeter smiles,\nAll the dovelike moans beguiles.\n\nSleep, sleep, happy child!\nAll creation slept and smiled.\nSleep, sleep, happy sleep,\nWhile o’er thee thy mother weep.\n\nSweet babe, in thy face\nHoly image I can trace;\nSweet babe, once like thee\nThy Maker lay, and wept for me:\n\nWept for me, for thee, for all,\nWhen He was an infant small.\nThou His image ever see,\nHeavenly face that smiles on thee!\n\nSmiles on thee, on me, on all,\nWho became an infant small;\nInfant smiles are His own smiles;\nHeaven and earth to peace beguiles.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 32,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "grief",
+      "love",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-divine-image",
+    "title": "The Divine Image",
+    "author": "William Blake",
+    "text": "To Mercy, Pity, Peace, and Love,\n    All pray in their distress,\nAnd to these virtues of delight\n    Return their thankfulness.\n\nFor Mercy, Pity, Peace, and Love,\n    Is God our Father dear;\nAnd Mercy, Pity, Peace, and Love,\n    Is man, His child and care.\n\nFor Mercy has a human heart;\n    Pity, a human face;\nAnd Love, the human form divine:\n    And Peace the human dress.\n\nThen every man, of every clime,\n    That prays in his distress,\nPrays to the human form divine:\n    Love, Mercy, Pity, Peace.\n\nAnd all must love the human form,\n    In heathen, Turk, or Jew.\nWhere Mercy, Love, and Pity dwell,\n    There God is dwelling too.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 20,
+    "tags": [
+      "childhood",
+      "spiritual",
+      "love",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-holy-thursday",
+    "title": "Holy Thursday",
+    "author": "William Blake",
+    "text": "’Twas on a holy Thursday, their innocent faces clean,\nThe children walking two and two, in red, and blue, and green:\nGrey-headed beadles walked before, with wands as white as snow,\nTill into the high dome of Paul’s they like Thames waters flow.\n\nO what a multitude they seemed, these flowers of London town!\nSeated in companies they sit, with radiance all their own.\nThe hum of multitudes was there, but multitudes of lambs,\nThousands of little boys and girls raising their innocent hands.\n\nNow like a mighty wind they raise to heaven the voice of song,\nOr like harmonious thunderings the seats of heaven among:\nBeneath them sit the aged men, wise guardians of the poor.\nThen cherish pity, lest you drive an angel from your door.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 12,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "city",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-night",
+    "title": "Night",
+    "author": "William Blake",
+    "text": "The sun descending in the West,\nThe evening star does shine;\nThe birds are silent in their nest,\nAnd I must seek for mine.\nThe moon, like a flower\nIn heaven’s high bower,\nWith silent delight,\nSits and smiles on the night.\n\nFarewell, green fields and happy groves,\nWhere flocks have took delight,\nWhere lambs have nibbled, silent moves\nThe feet of angels bright;\nUnseen, they pour blessing,\nAnd joy without ceasing,\nOn each bud and blossom,\nAnd each sleeping bosom.\n\nThey look in every thoughtless nest\nWhere birds are covered warm;\nThey visit caves of every beast,\nTo keep them all from harm:\nIf they see any weeping\nThat should have been sleeping,\nThey pour sleep on their head,\nAnd sit down by their bed.\n\nWhen wolves and tigers howl for prey,\nThey pitying stand and weep;\nSeeking to drive their thirst away,\nAnd keep them from the sheep.\nBut, if they rush dreadful,\nThe angels, most heedful,\nReceive each mild spirit,\nNew worlds to inherit.\n\nAnd there the lion’s ruddy eyes\nShall flow with tears of gold:\nAnd pitying the tender cries,\nAnd walking round the fold:\nSaying: ‘Wrath by His meekness,\nAnd, by His health, sickness,\nIs driven away\nFrom our immortal day.\n\n‘And now beside thee, bleating lamb,\nI can lie down and sleep,\nOr think on Him who bore thy name,\nGraze after thee, and weep.\nFor, washed in life’s river,\nMy bright mane for ever\nShall shine like the gold,\nAs I guard o’er the fold.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 48,
+    "tags": [
+      "nature",
+      "spiritual",
+      "grief",
+      "anger",
+      "dream",
+      "long"
+    ]
+  },
+  {
+    "id": "william-blake-spring",
+    "title": "Spring",
+    "author": "William Blake",
+    "text": "      Sound the flute!\n      Now it’s mute!\n      Birds delight,\n      Day and night,\n      Nightingale,\n      In the dale,\n      Lark in sky,—\n      Merrily,\nMerrily, merrily to welcome in the year.\n\n      Little boy,\n      Full of joy;\n      Little girl,\n      Sweet and small;\n      Cock does crow,\n      So do you;\n      Merry voice,\n      Infant noise;\nMerrily, merrily to welcome in the year.\n\n      Little lamb,\n      Here I am;\n      Come and lick\n      My white neck;\n      Let me pull\n      Your soft wool;\n      Let me kiss\n      Your soft face;\nMerrily, merrily we welcome in the year.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 27,
+    "tags": [
+      "nature",
+      "childhood",
+      "love",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-nurse-s-song",
+    "title": "Nurse’s Song",
+    "author": "William Blake",
+    "text": "When voices of children are heard on the green,\n    And laughing is heard on the hill,\nMy heart is at rest within my breast,\n    And everything else is still.\n\n‘Then come home, my children, the sun is gone down,\n    And the dews of night arise;\nCome, come, leave off play, and let us away,\n    Till the morning appears in the skies.’\n\n‘No, no, let us play, for it is yet day,\n    And we cannot go to sleep;\nBesides, in the sky the little birds fly,\n    And the hills are all covered with sheep.’\n\n‘Well, well, go and play till the light fades away,\n    And then go home to bed.’\nThe little ones leaped, and shouted, and laughed,\n    And all the hills echoèd.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 16,
+    "tags": [
+      "nature",
+      "childhood",
+      "love",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-infant-joy",
+    "title": "Infant Joy",
+    "author": "William Blake",
+    "text": "‘I have no name;\nI am but two days old.’\nWhat shall I call thee?\n‘I happy am,\nJoy is my name.’\nSweet joy befall thee!\n\nPretty joy!\nSweet joy, but two days old.\nSweet joy I call thee:\nThou dost smile,\nI sing the while;\nSweet joy befall thee!",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 12,
+    "tags": [
+      "childhood",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-a-dream",
+    "title": "A Dream",
+    "author": "William Blake",
+    "text": "Once a dream did weave a shade\nO’er my angel-guarded bed,\nThat an emmet lost its way\nWhere on grass methought I lay.\n\nTroubled, wildered, and forlorn,\nDark, benighted, travel-worn,\nOver many a tangled spray,\nAll heart-broke, I heard her say:\n\n‘O my children! do they cry,\nDo they hear their father sigh?\nNow they look abroad to see,\nNow return and weep for me.’\n\nPitying, I dropped a tear:\nBut I saw a glow-worm near,\nWho replied, ‘What wailing wight\nCalls the watchman of the night?’\n\n‘I am set to light the ground,\nWhile the beetle goes his round:\nFollow now the beetle’s hum;\nLittle wanderer, hie thee home!’",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 20,
+    "tags": [
+      "childhood",
+      "spiritual",
+      "grief",
+      "love",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-on-another-s-sorrow",
+    "title": "On Another’s Sorrow",
+    "author": "William Blake",
+    "text": "Can I see another’s woe,\nAnd not be in sorrow too?\nCan I see another’s grief,\nAnd not seek for kind relief?\n\nCan I see a falling tear,\nAnd not feel my sorrow’s share?\nCan a father see his child\nWeep, nor be with sorrow filled?\n\nCan a mother sit and hear\nAn infant groan, an infant fear?\nNo, no! never can it be!\nNever, never can it be!\n\nAnd can He who smiles on all\nHear the wren with sorrows small,\nHear the small bird’s grief and care,\nHear the woes that infants bear—\n\nAnd not sit beside the nest,\nPouring pity in their breast,\nAnd not sit the cradle near,\nWeeping tear on infant’s tear?\n\nAnd not sit both night and day,\nWiping all our tears away?\nO no! never can it be!\nNever, never can it be!\n\nHe doth give His joy to all:\nHe becomes an infant small,\nHe becomes a man of woe,\nHe doth feel the sorrow too.\n\nThink not thou canst sigh a sigh,\nAnd thy Maker is not by:\nThink not thou canst weep a tear,\nAnd thy Maker is not near.\n\nO He gives to us His joy,\nThat our grief He may destroy:\nTill our grief is fled and gone\nHe doth sit by us and moan.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 36,
+    "tags": [
+      "nature",
+      "childhood",
+      "grief",
+      "dream",
+      "long"
+    ]
+  },
+  {
+    "id": "william-blake-introduction-2",
+    "title": "Introduction",
+    "author": "William Blake",
+    "text": "    Hear the voice of the Bard,\nWho present, past, and future, sees;\n    Whose ears have heard\n    The Holy Word\nThat walked among the ancient trees;\n\n    Calling the lapséd soul,\nAnd weeping in the evening dew;\n    That might control\n    The starry pole,\nAnd fallen, fallen light renew!\n\n    ‘O Earth, O Earth, return!\nArise from out the dewy grass!\n    Night is worn,\n    And the morn\nRises from the slumbrous mass.\n\n    ‘Turn away no more;\nWhy wilt thou turn away?\n    The starry floor,\n    The watery shore,\nIs given thee till the break of day.’",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 20,
+    "tags": [
+      "nature",
+      "spiritual",
+      "grief",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-earth-s-answer",
+    "title": "Earth’s Answer",
+    "author": "William Blake",
+    "text": "    Earth raised up her head\nFrom the darkness dread and drear,\n        Her light fled,\n        Stony, dread,\nAnd her locks covered with grey despair.\n\n    ‘Prisoned on watery shore,\nStarry jealousy does keep my den\n        Cold and hoar;\n        Weeping o’er,\nI hear the father of the ancient men.\n\n    ‘Selfish father of men!\nCruel, jealous, selfish fear!\n        Can delight,\n        Chained in night,\nThe virgins of youth and morning bear.\n\n    ‘Does spring hide its joy,\nWhen buds and blossoms grow?\n        Does the sower\n        Sow by night,\nOr the ploughman in darkness plough?\n\n    ‘Break this heavy chain,\nThat does freeze my bones around!\n        Selfish, vain,\n        Eternal bane,\nThat free love with bondage bound.’",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 25,
+    "tags": [
+      "nature",
+      "childhood",
+      "grief",
+      "love",
+      "anger",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-clod-and-the-pebble",
+    "title": "The Clod And The Pebble",
+    "author": "William Blake",
+    "text": "‘Love seeketh not itself to please,\n    Nor for itself hath any care,\nBut for another gives its ease,\n    And builds a heaven in hell’s despair.’\n\nSo sung a little clod of clay,\n    Trodden with the cattle’s feet,\nBut a pebble of the brook\n    Warbled out these metres meet:\n\n‘Love seeketh only Self to please,\n    To bind another to its delight,\nJoys in another’s loss of ease,\n    And builds a hell in heaven’s despite.’",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 12,
+    "tags": [
+      "nature",
+      "spiritual",
+      "love",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-holy-thursday-2",
+    "title": "Holy Thursday",
+    "author": "William Blake",
+    "text": "Is this a holy thing to see\n    In a rich and fruitful land,—\nBabes reduced to misery,\n    Fed with cold and usurous hand?\n\nIs that trembling cry a song?\n    Can it be a song of joy?\nAnd so many children poor?\n    It is a land of poverty!\n\nAnd their sun does never shine,\n    And their fields are bleak and bare,\nAnd their ways are filled with thorns,\n    It is eternal winter there.\n\nFor where’er the sun does shine,\n    And where’er the rain does fall,\nBabe can never hunger there,\n    Nor poverty the mind appal.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 16,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-little-girl-lost",
+    "title": "The Little Girl Lost",
+    "author": "William Blake",
+    "text": "In futurity\nI prophesy\nThat the earth from sleep\n(Grave the sentence deep)\n\nShall arise, and seek\nFor her Maker meek;\nAnd the desert wild\nBecome a garden mild.\n\nIn the southern clime,\nWhere the summer’s prime\nNever fades away,\nLovely Lyca lay.\n\nSeven summers old\nLovely Lyca told.\nShe had wandered long,\nHearing wild birds’ song.\n\n‘Sweet sleep, come to me,\nUnderneath this tree;\nDo father, mother, weep?\nWhere can Lyca sleep?\n\n‘Lost in desert wild\nIs your little child.\nHow can Lyca sleep\nIf her mother weep?\n\n‘If her heart does ache,\nThen let Lyca wake;\nIf my mother sleep,\nLyca shall not weep.\n\n‘Frowning, frowning night,\nO’er this desert bright\nLet thy moon arise,\nWhile I close my eyes.’\n\nSleeping Lyca lay,\nWhile the beasts of prey,\nCome from caverns deep,\nViewed the maid asleep.\n\nThe kingly lion stood,\nAnd the virgin viewed:\nThen he gambolled round\nO’er the hallowed ground.\n\nLeopards, tigers, play\nRound her as she lay;\nWhile the lion old\nBowed his mane of gold,\n\nAnd her bosom lick,\nAnd upon her neck,\nFrom his eyes of flame,\nRuby tears there came;\n\nWhile the lioness\nLoosed her slender dress,\nAnd naked they conveyed\nTo caves the sleeping maid.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 52,
+    "tags": [
+      "nature",
+      "childhood",
+      "grief",
+      "love",
+      "dream",
+      "long"
+    ]
+  },
+  {
+    "id": "william-blake-the-little-girl-found",
+    "title": "The Little Girl Found",
+    "author": "William Blake",
+    "text": "All the night in woe\nLyca’s parents go\nOver valleys deep,\nWhile the deserts weep.\n\nTired and woe-begone,\nHoarse with making moan,\nArm in arm, seven days\nThey traced the desert ways.\n\nSeven nights they sleep\nAmong shadows deep,\nAnd dream they see their child\nStarved in desert wild.\n\nPale through pathless ways\nThe fancied image strays,\nFamished, weeping, weak,\nWith hollow piteous shriek.\n\nRising from unrest,\nThe trembling woman pressed\nWith feet of weary woe;\nShe could no further go.\n\nIn his arms he bore\nHer, armed with sorrow sore;\nTill before their way\nA couching lion lay.\n\nTurning back was vain:\nSoon his heavy mane\nBore them to the ground,\nThen he stalked around,\n\nSmelling to his prey;\nBut their fears allay\nWhen he licks their hands,\nAnd silent by them stands.\n\nThey look upon his eyes,\nFilled with deep surprise;\nAnd wondering behold\nA spirit armed in gold.\n\nOn his head a crown,\nOn his shoulders down\nFlowed his golden hair.\nGone was all their care.\n\n‘Follow me,’ he said;\n‘Weep not for the maid;\nIn my palace deep,\nLyca lies asleep.’\n\nThen they followèd\nWhere the vision led,\nAnd saw their sleeping child\nAmong tigers wild.\n\nTo this day they dwell\nIn a lonely dell,\nNor fear the wolvish howl\nNor the lion’s growl.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 52,
+    "tags": [
+      "childhood",
+      "city",
+      "grief",
+      "dream",
+      "long"
+    ]
+  },
+  {
+    "id": "william-blake-the-chimney-sweeper-2",
+    "title": "The Chimney-sweeper",
+    "author": "William Blake",
+    "text": "A little black thing among the snow,\n    Crying! ‘weep! weep!’ in notes of woe!\n‘Where are thy father and mother? Say!’—\n    ‘They are both gone up to the church to pray.\n\n‘Because I was happy upon the heath,\n    And smiled among the winter’s snow,\nThey clothed me in the clothes of death,\n    And taught me to sing the notes of woe.\n\n‘And because I am happy and dance and sing,\n    They think they have done me no injury,\nAnd are gone to praise God and His priest and king,\n    Who made up a heaven of our misery.’",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 12,
+    "tags": [
+      "childhood",
+      "spiritual",
+      "grief",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-nurse-s-song-2",
+    "title": "Nurse’s Song",
+    "author": "William Blake",
+    "text": "When the voices of children are heard on the green,\n    And whisperings are in the dale,\nThe days of my youth rise fresh in my mind,\n    My face turns green and pale.\n\nThen come home, my children, the sun is gone down,\n    And the dews of night arise;\nYour spring and your day are wasted in play,\n    And your winter and night in disguise.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "nature",
+      "childhood",
+      "dream",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-the-sick-rose",
+    "title": "The Sick Rose",
+    "author": "William Blake",
+    "text": "O rose, thou art sick!\n    The invisible worm,\nThat flies in the night,\n    In the howling storm,\n\nHas found out thy bed\n    Of crimson joy,\nAnd his dark secret love\n    Does thy life destroy.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "nature",
+      "love",
+      "dream",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-the-fly",
+    "title": "The Fly",
+    "author": "William Blake",
+    "text": "Little Fly,\n    Thy summer’s play\nMy thoughtless hand\n    Has brushed away.\n\nAm not I\n    A fly like thee?\nOr art not thou\n    A man like me?\n\nFor I dance,\n    And drink, and sing,\nTill some blind hand\n    Shall brush my wing.\n\nIf thought is life\n    And strength and breath,\nAnd the want\n    Of thought is death;\n\nThen am I\n    A happy fly.\nIf I live,\n    Or if I die.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 20,
+    "tags": [
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-angel",
+    "title": "The Angel",
+    "author": "William Blake",
+    "text": "I dreamt a dream!  What can it mean?\nAnd that I was a maiden Queen\nGuarded by an Angel mild:\nWitless woe was ne’er beguiled!\n\nAnd I wept both night and day,\nAnd he wiped my tears away;\nAnd I wept both day and night,\nAnd hid from him my heart’s delight.\n\nSo he took his wings, and fled;\nThen the morn blushed rosy red.\nI dried my tears, and armed my fears\nWith ten thousand shields and spears.\n\nSoon my Angel came again;\nI was armed, he came in vain;\nFor the time of youth was fled,\nAnd grey hairs were on my head.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 16,
+    "tags": [
+      "spiritual",
+      "grief",
+      "love",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-tiger",
+    "title": "The Tiger",
+    "author": "William Blake",
+    "text": "Tiger, tiger, burning bright\nIn the forests of the night,\nWhat immortal hand or eye\nCould frame thy fearful symmetry?\n\nIn what distant deeps or skies\nBurnt the fire of thine eyes?\nOn what wings dare he aspire?\nWhat the hand dare seize the fire?\n\nAnd what shoulder and what art\nCould twist the sinews of thy heart?\nAnd, when thy heart began to beat,\nWhat dread hand and what dread feet?\n\nWhat the hammer? what the chain?\nIn what furnace was thy brain?\nWhat the anvil? what dread grasp\nDare its deadly terrors clasp?\n\nWhen the stars threw down their spears,\nAnd watered heaven with their tears,\nDid He smile His work to see?\nDid He who made the lamb make thee?\n\nTiger, tiger, burning bright\nIn the forests of the night,\nWhat immortal hand or eye\nDare frame thy fearful symmetry?",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 24,
+    "tags": [
+      "nature",
+      "spiritual",
+      "grief",
+      "love",
+      "anger",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-my-pretty-rose-tree",
+    "title": "My Pretty Rose Tree",
+    "author": "William Blake",
+    "text": "A flower was offered to me,\n    Such a flower as May never bore;\nBut I said, ‘I’ve a pretty rose tree,’\n    And I passed the sweet flower o’er.\n\nThen I went to my pretty rose tree,\n    To tend her by day and by night;\nBut my rose turned away with jealousy,\n    And her thorns were my only delight.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "nature",
+      "anger",
+      "dream",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-ah-sunflower",
+    "title": "Ah, Sunflower",
+    "author": "William Blake",
+    "text": "Ah, sunflower, weary of time,\n    Who countest the steps of the sun;\nSeeking after that sweet golden clime\n    Where the traveller’s journey is done;\n\nWhere the Youth pined away with desire,\n    And the pale virgin shrouded in snow,\nArise from their graves, and aspire\n    Where my Sunflower wishes to go!",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "nature",
+      "love",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-the-lily",
+    "title": "The Lily",
+    "author": "William Blake",
+    "text": "The modest Rose puts forth a thorn,\nThe humble sheep a threat’ning horn:\nWhile the Lily white shall in love delight,\nNor a thorn nor a threat stain her beauty bright.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 4,
+    "tags": [
+      "nature",
+      "love",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-the-garden-of-love",
+    "title": "The Garden Of Love",
+    "author": "William Blake",
+    "text": "I went to the Garden of Love,\n    And saw what I never had seen;\nA Chapel was built in the midst,\n    Where I used to play on the green.\n\nAnd the gates of this Chapel were shut,\n    And ‘Thou shalt not’ writ over the door;\nSo I turned to the Garden of Love\n    That so many sweet flowers bore.\n\nAnd I saw it was filled with graves,\n    And tombstones where flowers should be;\nAnd priests in black gowns were walking their rounds,\n    And binding with briars my joys and desires.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 12,
+    "tags": [
+      "nature",
+      "spiritual",
+      "love",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-the-little-vagabond",
+    "title": "The Little Vagabond",
+    "author": "William Blake",
+    "text": "Dear mother, dear mother, the Church is cold;\nBut the Alehouse is healthy, and pleasant, and warm.\nBesides, I can tell where I am used well;\nSuch usage in heaven will never do well.\n\nBut, if at the Church they would give us some ale,\nAnd a pleasant fire our souls to regale,\nWe’d sing and we’d pray all the livelong day,\nNor ever once wish from the Church to stray.\n\nThen the Parson might preach, and drink, and sing,\nAnd we’d be as happy as birds in the spring;\nAnd modest Dame Lurch, who is always at church,\nWould not have bandy children, nor fasting, nor birch.\n\nAnd God, like a father, rejoicing to see\nHis children as pleasant and happy as He,\nWould have no more quarrel with the Devil or the barrel,\nBut kiss him, and give him both drink and apparel.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 16,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "love",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-london",
+    "title": "London",
+    "author": "William Blake",
+    "text": "I wander through each chartered street,\n    Near where the chartered Thames does flow,\nA mark in every face I meet,\n    Marks of weakness, marks of woe.\n\nIn every cry of every man,\n    In every infant’s cry of fear,\nIn every voice, in every ban,\n    The mind-forged manacles I hear:\n\nHow the chimney-sweeper’s cry\n    Every blackening church appals,\nAnd the hapless soldier’s sigh\n    Runs in blood down palace-walls.\n\nBut most, through midnight streets I hear\n    How the youthful harlot’s curse\nBlasts the new-born infant’s tear,\n    And blights with plagues the marriage hearse.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 16,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "city",
+      "grief",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-human-abstract",
+    "title": "The Human Abstract",
+    "author": "William Blake",
+    "text": "Pity would be no more\nIf we did not make somebody poor,\nAnd Mercy no more could be\nIf all were as happy as we.\n\nAnd mutual fear brings Peace,\nTill the selfish loves increase;\nThen Cruelty knits a snare,\nAnd spreads his baits with care.\n\nHe sits down with holy fears,\nAnd waters the ground with tears;\nThen Humility takes its root\nUnderneath his foot.\n\nSoon spreads the dismal shade\nOf Mystery over his head,\nAnd the caterpillar and fly\nFeed on the Mystery.\n\nAnd it bears the fruit of Deceit,\nRuddy and sweet to eat,\nAnd the raven his nest has made\nIn its thickest shade.\n\nThe gods of the earth and sea\nSought through nature to find this tree,\nBut their search was all in vain:\nThere grows one in the human Brain.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 24,
+    "tags": [
+      "nature",
+      "spiritual",
+      "grief",
+      "love",
+      "anger",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-infant-sorrow",
+    "title": "Infant Sorrow",
+    "author": "William Blake",
+    "text": "My mother groaned, my father wept:\nInto the dangerous world I leapt,\nHelpless, naked, piping loud,\nLike a fiend hid in a cloud.\n\nStruggling in my father’s hands,\nStriving against my swaddling bands,\nBound and weary, I thought best\nTo sulk upon my mother’s breast.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "childhood",
+      "grief",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-a-poison-tree",
+    "title": "A Poison Tree",
+    "author": "William Blake",
+    "text": "I was angry with my friend:\nI told my wrath, my wrath did end.\nI was angry with my foe:\nI told it not, my wrath did grow.\n\nAnd I watered it in fears\nNight and morning with my tears,\nAnd I sunnèd it with smiles\nAnd with soft deceitful wiles.\n\nAnd it grew both day and night,\nTill it bore an apple bright,\nAnd my foe beheld it shine,\nAnd he knew that it was mine,—\n\nAnd into my garden stole\nWhen the night had veiled the pole;\nIn the morning, glad, I see\nMy foe outstretched beneath the tree.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 16,
+    "tags": [
+      "nature",
+      "grief",
+      "anger",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-a-little-boy-lost",
+    "title": "A Little Boy Lost",
+    "author": "William Blake",
+    "text": "‘Nought loves another as itself,\n    Nor venerates another so,\nNor is it possible to thought\n    A greater than itself to know.\n\n‘And, father, how can I love you\n    Or any of my brothers more?\nI love you like the little bird\n    That picks up crumbs around the door.’\n\nThe Priest sat by and heard the child;\n    In trembling zeal he seized his hair,\nHe led him by his little coat,\n    And all admired his priestly care.\n\nAnd standing on the altar high,\n    ‘Lo, what a fiend is here!’ said he:\n‘One who sets reason up for judge\n    Of our most holy mystery.’\n\nThe weeping child could not be heard,\n    The weeping parents wept in vain:\nThey stripped him to his little shirt,\n    And bound him in an iron chain,\n\nAnd burned him in a holy place\n    Where many had been burned before;\nThe weeping parents wept in vain.\n    Are such things done on Albion’s shore?",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 24,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "grief",
+      "love",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-a-little-girl-lost",
+    "title": "A Little Girl Lost",
+    "author": "William Blake",
+    "text": "Children of the future age,\nReading this indignant page,\nKnow that in a former time\nLove, sweet love, was thought a crime.\n\nIn the age of gold,\nFree from winter’s cold,\nYouth and maiden bright,\nTo the holy light,\nNaked in the sunny beams delight.\n\nOnce a youthful pair,\nFilled with softest care,\nMet in garden bright\nWhere the holy light\nHad just removed the curtains of the night.\n\nThere, in rising day,\nOn the grass they play;\nParents were afar,\nStrangers came not near,\nAnd the maiden soon forgot her fear.\n\nTired with kisses sweet,\nThey agree to meet\nWhen the silent sleep\nWaves o’er heaven’s deep,\nAnd the weary tired wanderers weep.\n\nTo her father white\nCame the maiden bright;\nBut his loving look,\nLike the holy book,\nAll her tender limbs with terror shook.\n\nOna, pale and weak,\nTo thy father speak!\nO the trembling fear!\nO the dismal care\nThat shakes the blossoms of my hoary hair!’",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 34,
+    "tags": [
+      "nature",
+      "childhood",
+      "spiritual",
+      "grief",
+      "love",
+      "anger",
+      "dream",
+      "long"
+    ]
+  },
+  {
+    "id": "william-blake-a-divine-image",
+    "title": "A Divine Image",
+    "author": "William Blake",
+    "text": "Cruelty has a human heart,\n    And Jealousy a human face;\nTerror the human form divine,\n    And Secrecy the human dress.\n\nThe human dress is forgèd iron,\n    The human form a fiery forge,\nThe human face a furnace sealed,\n    The human heart its hungry gorge.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 8,
+    "tags": [
+      "spiritual",
+      "love",
+      "anger",
+      "short"
+    ]
+  },
+  {
+    "id": "william-blake-a-cradle-song-2",
+    "title": "A Cradle Song",
+    "author": "William Blake",
+    "text": "Sleep, sleep, beauty bright,\nDreaming in the joys of night;\nSleep, sleep; in thy sleep\nLittle sorrows sit and weep.\n\nSweet babe, in thy face\nSoft desires I can trace,\nSecret joys and secret smiles,\nLittle pretty infant wiles.\n\nAs thy softest limbs I feel,\nSmiles as of the morning steal\nO’er thy cheek, and o’er thy breast\nWhere thy little heart doth rest.\n\nO the cunning wiles that creep\nIn thy little heart asleep!\nWhen thy little heart doth wake,\nThen the dreadful light shall break.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 16,
+    "tags": [
+      "childhood",
+      "grief",
+      "love",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-to-tirzah",
+    "title": "To Tirzah",
+    "author": "William Blake",
+    "text": "Whate’er is born of mortal birth\nMust be consumèd with the earth,\nTo rise from generation free:\nThen what have I to do with thee?\n\nThe sexes sprung from shame and pride,\nBlowed in the morn, in evening died;\nBut mercy changed death into sleep;\nThe sexes rose to work and weep.\n\nThou, mother of my mortal part,\nWith cruelty didst mould my heart,\nAnd with false self-deceiving tears\nDidst blind my nostrils, eyes, and ears,\n\nDidst close my tongue in senseless clay,\nAnd me to mortal life betray.\nThe death of Jesus set me free:\nThen what have I to do with thee?",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 16,
+    "tags": [
+      "nature",
+      "childhood",
+      "grief",
+      "love",
+      "anger",
+      "dream",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-schoolboy",
+    "title": "The Schoolboy",
+    "author": "William Blake",
+    "text": "I love to rise in a summer morn,\n    When the birds sing on every tree;\nThe distant huntsman winds his horn,\n    And the skylark sings with me:\n    O what sweet company!\n\nBut to go to school in a summer morn,—\n    O it drives all joy away!\nUnder a cruel eye outworn,\n    The little ones spend the day\n    In sighing and dismay.\n\nAh then at times I drooping sit,\n    And spend many an anxious hour;\nNor in my book can I take delight,\n    Nor sit in learning’s bower,\n    Worn through with the dreary shower.\n\nHow can the bird that is born for joy\n    Sit in a cage and sing?\nHow can a child, when fears annoy,\n    But droop his tender wing,\n    And forget his youthful spring!\n\nO father and mother if buds are nipped,\n    And blossoms blown away;\nAnd if the tender plants are stripped\n    Of their joy in the springing day,\n    By sorrow and care’s dismay,—\n\nHow shall the summer arise in joy,\n    Or the summer fruits appear?\nOr how shall we gather what griefs destroy,\n    Or bless the mellowing year,\n    When the blasts of winter appear?",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 30,
+    "tags": [
+      "nature",
+      "childhood",
+      "grief",
+      "love",
+      "medium"
+    ]
+  },
+  {
+    "id": "william-blake-the-voice-of-the-ancient-bard",
+    "title": "The Voice Of The Ancient Bard",
+    "author": "William Blake",
+    "text": "Youth of delight! come hither\nAnd see the opening morn,\nImage of Truth new-born.\nDoubt is fled, and clouds of reason,\nDark disputes and artful teazing.\nFolly is an endless maze;\nTangled roots perplex her ways;\nHow many have fallen there!\nThey stumble all night over bones of the dead;\nAnd feel—they know not what but care;\nAnd wish to lead others, when they should be led.",
+    "source": "Project Gutenberg ebook 1934",
+    "lineCount": 11,
+    "tags": [
+      "dream",
+      "short"
+    ]
+  }
+]
