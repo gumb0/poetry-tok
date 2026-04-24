@@ -47,6 +47,27 @@ The generated JSON should be manually reviewed before being added to the app cor
 
 For a reviewed corpus file, write to `data/poems.json`. Generated scratch files matching `data/*.generated.json` are ignored by git.
 
+Dickinson's early Gutenberg editions use numbered poem markers, so import them with `--split-mode numbered`:
+
+```bash
+python3 scripts/ingest_gutenberg.py "https://www.gutenberg.org/ebooks/2678.txt.utf-8" \
+  --author "Emily Dickinson" \
+  --source "Project Gutenberg ebook 2678" \
+  --split-mode numbered \
+  --out data/dickinson-series-one.generated.json
+```
+
+Merge reviewed generated files into the app corpus:
+
+```bash
+python3 scripts/build_corpus.py \
+  data/blake-songs.generated.json \
+  data/dickinson-series-one.generated.json \
+  data/dickinson-series-two.generated.json \
+  data/dickinson-series-three.generated.json \
+  --out data/poems.json
+```
+
 ## Recommendation Roadmap
 
 The MVP recommender should evolve in stages:

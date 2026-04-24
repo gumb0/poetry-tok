@@ -8,5 +8,35 @@
     "landingUrl": "https://www.gutenberg.org/ebooks/1934",
     "copyrightStatus": "Public domain in the USA",
     "importStatus": "imported"
+  },
+  {
+    "id": "gutenberg-2678",
+    "title": "Poems by Emily Dickinson, Series One",
+    "author": "Emily Dickinson",
+    "gutenbergId": 2678,
+    "textUrl": "https://www.gutenberg.org/ebooks/2678.txt.utf-8",
+    "landingUrl": "https://www.gutenberg.org/ebooks/2678",
+    "copyrightStatus": "Public domain in the USA",
+    "importStatus": "imported"
+  },
+  {
+    "id": "gutenberg-2679",
+    "title": "Poems by Emily Dickinson, Series Two",
+    "author": "Emily Dickinson",
+    "gutenbergId": 2679,
+    "textUrl": "https://www.gutenberg.org/ebooks/2679.txt.utf-8",
+    "landingUrl": "https://www.gutenberg.org/ebooks/2679",
+    "copyrightStatus": "Public domain in the USA",
+    "importStatus": "imported"
+  },
+  {
+    "id": "gutenberg-12241",
+    "title": "Poems by Emily Dickinson, Third Series",
+    "author": "Emily Dickinson",
+    "gutenbergId": 12241,
+    "textUrl": "https://www.gutenberg.org/ebooks/12241.txt.utf-8",
+    "landingUrl": "https://www.gutenberg.org/ebooks/12241",
+    "copyrightStatus": "Public domain in the USA",
+    "importStatus": "imported"
   }
 ]
