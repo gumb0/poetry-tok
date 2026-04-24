@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poetry Tok</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app" aria-label="Poem recommendation reader">
+      <section class="reader" aria-live="polite">
+        <div class="poem-meta">
+          <p id="poem-author"></p>
+          <p id="poem-position"></p>
+        </div>
+
+        <article class="poem-card">
+          <h1 id="poem-title"></h1>
+          <div id="poem-text" class="poem-text"></div>
+        </article>
+
+        <div class="controls" aria-label="Poem actions">
+          <button id="dislike-button" class="icon-button" type="button" aria-label="Dislike this poem" title="Dislike">
+            <span aria-hidden="true">-</span>
+          </button>
+          <button id="next-button" class="next-button" type="button">Next</button>
+          <button id="like-button" class="icon-button" type="button" aria-label="Like this poem" title="Like">
+            <span aria-hidden="true">+</span>
+          </button>
+        </div>
+      </section>
+
+      <aside class="insights" aria-label="Recommendation state">
+        <h2>Preference Signals</h2>
+        <dl>
+          <div>
+            <dt>Liked</dt>
+            <dd id="liked-count">0</dd>
+          </div>
+          <div>
+            <dt>Disliked</dt>
+            <dd id="disliked-count">0</dd>
+          </div>
+          <div>
+            <dt>Seen</dt>
+            <dd id="seen-count">0</dd>
+          </div>
+        </dl>
+        <div class="tag-cloud" id="tag-cloud"></div>
+      </aside>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

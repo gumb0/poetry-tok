@@ -1,0 +1,213 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f4ee;
+  --surface: #fffdf8;
+  --ink: #1f2528;
+  --muted: #667075;
+  --line: #d7d0c3;
+  --accent: #28736f;
+  --accent-strong: #174f4c;
+  --bad: #8b3f46;
+  --shadow: 0 18px 60px rgba(31, 37, 40, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  width: min(1180px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 28px;
+  padding: 28px;
+}
+
+.reader {
+  min-height: calc(100vh - 56px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 18px;
+}
+
+.poem-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.poem-meta p {
+  margin: 0;
+}
+
+.poem-card {
+  align-self: center;
+  width: min(720px, 100%);
+  max-height: calc(100vh - 190px);
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 56px);
+  overflow: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.poem-card h1 {
+  margin: 0 0 22px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.poem-text {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.68;
+  white-space: pre-wrap;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 58px;
+}
+
+.icon-button,
+.next-button {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.next-button {
+  min-width: 112px;
+  height: 48px;
+  border-radius: 999px;
+  padding: 0 24px;
+  color: white;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
+.icon-button:hover,
+.icon-button:focus-visible,
+.next-button:hover,
+.next-button:focus-visible {
+  outline: 3px solid rgba(40, 115, 111, 0.22);
+  outline-offset: 2px;
+}
+
+#dislike-button[aria-pressed="true"] {
+  color: white;
+  background: var(--bad);
+  border-color: var(--bad);
+}
+
+#like-button[aria-pressed="true"] {
+  color: white;
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
+
+.insights {
+  align-self: start;
+  margin-top: 46px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.72);
+}
+
+.insights h2 {
+  margin: 0 0 16px;
+  font-size: 1rem;
+}
+
+.insights dl {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 18px;
+}
+
+.insights dl div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.insights dt {
+  color: var(--muted);
+}
+
+.insights dd {
+  margin: 0;
+  font-weight: 800;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 860px) {
+  .app {
+    min-height: 100svh;
+    display: block;
+    padding: 16px;
+  }
+
+  .reader {
+    min-height: calc(100svh - 32px);
+  }
+
+  .poem-card {
+    max-height: calc(100svh - 176px);
+  }
+
+  .insights {
+    display: none;
+  }
+}
