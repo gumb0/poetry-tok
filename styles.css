@@ -1,13 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #f7f4ee;
-  --surface: #fffdf8;
+  --bg: #f5f1e8;
+  --surface: #fffdf7;
   --ink: #1f2528;
   --muted: #667075;
   --line: #d7d0c3;
   --accent: #28736f;
   --accent-strong: #174f4c;
   --bad: #8b3f46;
+  --bad-strong: #6e2f36;
   --shadow: 0 18px 60px rgba(31, 37, 40, 0.12);
 }
 
@@ -27,6 +28,11 @@ button {
   font: inherit;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
 .app {
   width: min(1180px, 100%);
   min-height: 100vh;
@@ -44,17 +50,33 @@ button {
   gap: 18px;
 }
 
-.poem-meta {
+.reader-topline {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 18px;
   min-height: 28px;
   color: var(--muted);
   font-size: 0.9rem;
 }
 
-.poem-meta p {
+.reader-topline p {
   margin: 0;
+}
+
+.poem-author {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.poem-source,
+.poem-position {
+  margin-top: 4px;
+  font-size: 0.82rem;
+}
+
+.poem-position {
+  flex: 0 0 auto;
 }
 
 .poem-card {
@@ -86,6 +108,13 @@ button {
   white-space: pre-wrap;
 }
 
+.poem-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
 .controls {
   display: flex;
   align-items: center;
@@ -95,6 +124,7 @@ button {
 }
 
 .icon-button,
+.action-button,
 .next-button {
   border: 1px solid var(--line);
   background: var(--surface);
@@ -110,19 +140,37 @@ button {
   line-height: 1;
 }
 
+.action-button,
 .next-button {
   min-width: 112px;
   height: 48px;
   border-radius: 999px;
   padding: 0 24px;
+  font-weight: 800;
+}
+
+.action-button {
+  background: var(--surface);
+}
+
+.like-action {
+  color: var(--accent-strong);
+}
+
+.dislike-action {
+  color: var(--bad);
+}
+
+.next-button {
   color: white;
   background: var(--accent);
   border-color: var(--accent);
-  font-weight: 700;
 }
 
 .icon-button:hover,
 .icon-button:focus-visible,
+.action-button:hover,
+.action-button:focus-visible,
 .next-button:hover,
 .next-button:focus-visible {
   outline: 3px solid rgba(40, 115, 111, 0.22);
@@ -131,7 +179,7 @@ button {
 
 #dislike-button[aria-pressed="true"] {
   color: white;
-  background: var(--bad);
+  background: var(--bad-strong);
   border-color: var(--bad);
 }
 
@@ -155,6 +203,14 @@ button {
   font-size: 1rem;
 }
 
+.insights h3 {
+  margin: 18px 0 10px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .insights dl {
   display: grid;
   gap: 10px;
@@ -175,6 +231,23 @@ button {
 .insights dd {
   margin: 0;
   font-weight: 800;
+}
+
+.meter {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e6dfd3;
+}
+
+.meter span {
+  display: block;
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width 180ms ease;
 }
 
 .tag-cloud {
@@ -203,11 +276,49 @@ button {
     min-height: calc(100svh - 32px);
   }
 
+  .reader-topline {
+    padding: 0 2px;
+  }
+
   .poem-card {
     max-height: calc(100svh - 176px);
+    padding: 24px 22px;
+  }
+
+  .poem-card h1 {
+    font-size: 2rem;
+  }
+
+  .poem-text {
+    font-size: 1.14rem;
+    line-height: 1.62;
+  }
+
+  .controls {
+    gap: 8px;
+  }
+
+  .icon-button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .action-button,
+  .next-button {
+    min-width: 0;
+    height: 44px;
+    padding: 0 14px;
   }
 
   .insights {
     display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .action-button,
+  .next-button {
+    padding: 0 11px;
+    font-size: 0.9rem;
   }
 }

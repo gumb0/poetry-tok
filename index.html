@@ -9,29 +9,39 @@
   <body>
     <main class="app" aria-label="Poem recommendation reader">
       <section class="reader" aria-live="polite">
-        <div class="poem-meta">
-          <p id="poem-author"></p>
-          <p id="poem-position"></p>
+        <div class="reader-topline">
+          <div>
+            <p id="poem-author" class="poem-author"></p>
+            <p id="poem-source" class="poem-source"></p>
+          </div>
+          <p id="poem-position" class="poem-position"></p>
         </div>
 
         <article class="poem-card">
           <h1 id="poem-title"></h1>
           <div id="poem-text" class="poem-text"></div>
+          <div id="poem-tags" class="poem-tags"></div>
         </article>
 
         <div class="controls" aria-label="Poem actions">
-          <button id="dislike-button" class="icon-button" type="button" aria-label="Dislike this poem" title="Dislike">
-            <span aria-hidden="true">-</span>
+          <button id="previous-button" class="icon-button" type="button" aria-label="Previous poem" title="Previous">
+            <span aria-hidden="true">&lt;</span>
+          </button>
+          <button id="dislike-button" class="action-button dislike-action" type="button" aria-label="Dislike this poem" title="Dislike">
+            Dislike
           </button>
           <button id="next-button" class="next-button" type="button">Next</button>
-          <button id="like-button" class="icon-button" type="button" aria-label="Like this poem" title="Like">
-            <span aria-hidden="true">+</span>
+          <button id="like-button" class="action-button like-action" type="button" aria-label="Like this poem" title="Like">
+            Like
+          </button>
+          <button id="reset-button" class="icon-button" type="button" aria-label="Reset preferences" title="Reset preferences">
+            <span aria-hidden="true">R</span>
           </button>
         </div>
       </section>
 
       <aside class="insights" aria-label="Recommendation state">
-        <h2>Preference Signals</h2>
+        <h2>Reading Profile</h2>
         <dl>
           <div>
             <dt>Liked</dt>
@@ -46,6 +56,12 @@
             <dd id="seen-count">0</dd>
           </div>
         </dl>
+        <div class="meter" aria-label="Corpus progress">
+          <span id="progress-bar"></span>
+        </div>
+        <h3>Authors</h3>
+        <div class="tag-cloud" id="author-cloud"></div>
+        <h3>Tastes</h3>
         <div class="tag-cloud" id="tag-cloud"></div>
       </aside>
     </main>

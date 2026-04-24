@@ -64,24 +64,33 @@ let currentPoem = null;
 
 const titleEl = document.querySelector("#poem-title");
 const authorEl = document.querySelector("#poem-author");
+const sourceEl = document.querySelector("#poem-source");
 const positionEl = document.querySelector("#poem-position");
 const textEl = document.querySelector("#poem-text");
+const tagsEl = document.querySelector("#poem-tags");
 const likeButton = document.querySelector("#like-button");
 const dislikeButton = document.querySelector("#dislike-button");
 const nextButton = document.querySelector("#next-button");
+const previousButton = document.querySelector("#previous-button");
+const resetButton = document.querySelector("#reset-button");
 const likedCountEl = document.querySelector("#liked-count");
 const dislikedCountEl = document.querySelector("#disliked-count");
 const seenCountEl = document.querySelector("#seen-count");
 const tagCloudEl = document.querySelector("#tag-cloud");
+const authorCloudEl = document.querySelector("#author-cloud");
+const progressBarEl = document.querySelector("#progress-bar");
 
 init();
 
 likeButton.addEventListener("click", () => rateCurrentPoem("liked"));
 dislikeButton.addEventListener("click", () => rateCurrentPoem("disliked"));
 nextButton.addEventListener("click", nextPoem);
+previousButton.addEventListener("click", previousPoem);
+resetButton.addEventListener("click", resetPreferences);
 
 window.addEventListener("keydown", (event) => {
   if (event.key === "ArrowDown" || event.key.toLowerCase() === "j") nextPoem();
+  if (event.key === "ArrowUp" || event.key.toLowerCase() === "k") previousPoem();
   if (event.key.toLowerCase() === "l") rateCurrentPoem("liked");
   if (event.key.toLowerCase() === "d") rateCurrentPoem("disliked");
 });
@@ -98,9 +107,15 @@ window.addEventListener("touchend", (event) => {
 });
 
 function loadState() {
-  const fallback = { liked: [], disliked: [], seen: [] };
+  const fallback = { liked: [], disliked: [], seen: [], history: [] };
   try {
-    return { ...fallback, ...JSON.parse(localStorage.getItem(stateKey)) };
+    const parsed = { ...fallback, ...JSON.parse(localStorage.getItem(stateKey)) };
+    return {
+      liked: unique(parsed.liked),
+      disliked: unique(parsed.disliked),
+      seen: unique(parsed.seen),
+      history: unique(parsed.history),
+    };
   } catch {
     return fallback;
   }
@@ -109,6 +124,8 @@ function loadState() {
 async function init() {
   poems = await loadPoems();
   currentPoem = chooseNextPoem();
+  pushHistory(currentPoem.id);
+  saveState();
   render();
 }
 
@@ -129,26 +146,27 @@ function saveState() {
 }
 
 function render() {
+  if (!currentPoem) return;
   const index = poems.findIndex((poem) => poem.id === currentPoem.id);
   titleEl.textContent = currentPoem.title;
   authorEl.textContent = currentPoem.author;
-  positionEl.textContent = `${index + 1} / ${poems.length}`;
+  sourceEl.textContent = poemSourceLabel(currentPoem);
+  positionEl.textContent = `${Math.max(index + 1, 1)} / ${poems.length}`;
   textEl.textContent = currentPoem.text;
+  tagsEl.replaceChildren(...tagElements(tagsForPoem(currentPoem)));
 
   likeButton.setAttribute("aria-pressed", String(state.liked.includes(currentPoem.id)));
   dislikeButton.setAttribute("aria-pressed", String(state.disliked.includes(currentPoem.id)));
+  previousButton.disabled = state.history.length <= 1;
   likedCountEl.textContent = state.liked.length;
   dislikedCountEl.textContent = state.disliked.length;
   seenCountEl.textContent = state.seen.length;
+  progressBarEl.style.width = `${Math.min(100, (state.seen.length / poems.length) * 100)}%`;
 
   const topTags = getPreferenceTags().slice(0, 8);
-  tagCloudEl.innerHTML = "";
-  for (const tag of topTags) {
-    const tagEl = document.createElement("span");
-    tagEl.className = "tag";
-    tagEl.textContent = tag;
-    tagCloudEl.append(tagEl);
-  }
+  tagCloudEl.replaceChildren(...tagElements(topTags.length ? topTags : ["new reader"]));
+  const topAuthors = getPreferredAuthors().slice(0, 6);
+  authorCloudEl.replaceChildren(...tagElements(topAuthors.length ? topAuthors : ["no likes yet"]));
 }
 
 function rateCurrentPoem(rating) {
@@ -163,8 +181,31 @@ function rateCurrentPoem(rating) {
 function nextPoem() {
   markSeen(currentPoem.id);
   currentPoem = chooseNextPoem();
+  pushHistory(currentPoem.id);
   saveState();
   render();
+  scrollPoemToTop();
+}
+
+function previousPoem() {
+  if (state.history.length <= 1) return;
+  state.history.pop();
+  currentPoem = getPoem(state.history[state.history.length - 1]) ?? currentPoem;
+  saveState();
+  render();
+  scrollPoemToTop();
+}
+
+function resetPreferences() {
+  state.liked = [];
+  state.disliked = [];
+  state.seen = [];
+  state.history = [];
+  currentPoem = chooseNextPoem();
+  pushHistory(currentPoem.id);
+  saveState();
+  render();
+  scrollPoemToTop();
 }
 
 function markSeen(poemId) {
@@ -172,29 +213,33 @@ function markSeen(poemId) {
 }
 
 function chooseNextPoem() {
+  const recentAuthors = state.history.slice(-5).map((id) => getPoem(id)?.author).filter(Boolean);
   const unseen = poems.filter((poem) => !state.seen.includes(poem.id));
   const candidates = unseen.length ? unseen : poems;
   const scored = candidates
-    .map((poem) => ({ poem, score: scorePoem(poem) + Math.random() * 0.35 }))
+    .map((poem) => ({ poem, score: scorePoem(poem, recentAuthors) + Math.random() * explorationWeight() }))
     .sort((a, b) => b.score - a.score);
   return scored[0].poem;
 }
 
-function scorePoem(poem) {
+function scorePoem(poem, recentAuthors) {
   const likedTags = tagsFor(state.liked);
   const dislikedTags = tagsFor(state.disliked);
-  const tagScore = poem.tags.reduce((score, tag) => {
+  const poemTags = tagsForPoem(poem);
+  const tagScore = poemTags.reduce((score, tag) => {
     return score + (likedTags.get(tag) ?? 0) - (dislikedTags.get(tag) ?? 0) * 0.75;
   }, 0);
-  const authorBoost = state.liked.some((id) => getPoem(id)?.author === poem.author) ? 0.7 : 0;
-  const authorPenalty = state.disliked.some((id) => getPoem(id)?.author === poem.author) ? -0.35 : 0;
-  return tagScore + authorBoost + authorPenalty;
+  const authorBoost = state.liked.some((id) => getPoem(id)?.author === poem.author) ? 0.45 : 0;
+  const authorPenalty = state.disliked.some((id) => getPoem(id)?.author === poem.author) ? -0.45 : 0;
+  const recentAuthorPenalty = recentAuthors.filter((author) => author === poem.author).length * -0.55;
+  const lengthBonus = poem.lineCount <= 32 ? 0.35 : 0;
+  return tagScore + authorBoost + authorPenalty + recentAuthorPenalty + lengthBonus;
 }
 
 function tagsFor(poemIds) {
   const tags = new Map();
   for (const poemId of poemIds) {
-    for (const tag of getPoem(poemId)?.tags ?? []) {
+    for (const tag of tagsForPoem(getPoem(poemId))) {
       tags.set(tag, (tags.get(tag) ?? 0) + 1);
     }
   }
@@ -209,6 +254,50 @@ function getPreferenceTags() {
 
 function getPoem(poemId) {
   return poems.find((poem) => poem.id === poemId);
+}
+
+function pushHistory(poemId) {
+  if (state.history[state.history.length - 1] !== poemId) state.history.push(poemId);
+  state.history = state.history.slice(-100);
+}
+
+function explorationWeight() {
+  return state.liked.length + state.disliked.length < 5 ? 1.3 : 0.55;
+}
+
+function getPreferredAuthors() {
+  const authors = new Map();
+  for (const poemId of state.liked) {
+    const author = getPoem(poemId)?.author;
+    if (author) authors.set(author, (authors.get(author) ?? 0) + 1);
+  }
+  return [...authors].sort((a, b) => b[1] - a[1]).map(([author]) => author);
+}
+
+function tagElements(tags) {
+  return tags.map((tag) => {
+    const tagEl = document.createElement("span");
+    tagEl.className = "tag";
+    tagEl.textContent = tag;
+    return tagEl;
+  });
+}
+
+function tagsForPoem(poem) {
+  return poem?.tags?.length ? poem.tags : ["untagged"];
+}
+
+function poemSourceLabel(poem) {
+  const length = poem.lineCount ? `${poem.lineCount} lines` : "unknown length";
+  return `${length} - ${poem.source ?? "local corpus"}`;
+}
+
+function scrollPoemToTop() {
+  document.querySelector(".poem-card")?.scrollTo({ top: 0, behavior: "auto" });
+}
+
+function unique(values) {
+  return [...new Set(Array.isArray(values) ? values : [])];
 }
 
 function removeValue(values, value) {
